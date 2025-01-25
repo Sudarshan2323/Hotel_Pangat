@@ -3,21 +3,28 @@ html,body{
     padding: 0px;
 }
 nav {
-    background-color: rgb(63, 48, 228);
+    background-color: rgb(242, 184, 98);
     color: #fff;
     display: flex;
+    height: 80px;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     padding-left: 0px;
     margin: 0px;
 }
 
-.logo img{
+/* .logo img{
     color: white;
     padding-left: 30px;
     height: 100%;
     height: 65px;
     width: 110px;
+} */
+.logo h1{
+    color: black;
+    padding-left: 30px;
+    font-size: 26px;
 }
 
 .nav-links {
@@ -33,7 +40,10 @@ nav {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
+}
+.nav-links a:hover{
+    color: black;
 }
 #book{
     padding: 5px 10px;
@@ -41,7 +51,7 @@ nav {
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 #book:hover{
     background-color: red;
@@ -151,7 +161,7 @@ nav {
 .home-img{
     margin-bottom: 90px;
 }
-.services{
+/* .services{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,8 +192,8 @@ nav {
     height: 100%;
     background-size: cover;
     width: 100%;
-}
-.special-menu{
+} */
+/* .special-menu{
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -199,7 +209,7 @@ nav {
     margin-top: 25px;
     border: none;
     color: white;
-    border-bottom: 7px solid blue;
+    border-bottom: 7px solid red;
     border-radius: 50px;
     width: 360px;
     margin-bottom: 10px;
@@ -215,17 +225,117 @@ nav {
 .menu .product{
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 400px;
     width: 300px;
+    background-color: rgb(41, 40, 40);
+    overflow: hidden;
 }
-.menu .product img{
-    height: 60%;
+.product img{
+    height: 70%;
     width: 100%;
 }
-menu .product h2{
-    font-size: 55px;
-    color: rgb(49, 236, 28);
+.product-name{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
+.menu .product h3{
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.menu .product h3 span{
+    font-size: 20px;
+    color: red;
+}
+.desc{
+    padding: 15px;
+} */
+
+
+
+
+
+
+.specialties{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.specialties h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.specialties p{
+    font-size: 1.2em;
+    color: #b3b3b3;
+}
+.specialties .underline{
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c;
+    margin: 10px auto 30px;
+}
+.specialties .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.specialties .card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    text-align: left;
+    color: white;
+    height: 450px;
+}
+.specialties .card img{
+    width: 100%;
+    height: 70%;
+}
+.specialties .card .content{
+    padding: 20px;
+}
+.specialties .card .content h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+.specialties .card .content p{
+    margin: 10px 0;
+    font-size: 1em;
+    color: #b3b3b3;
+}
+.specialties .card .content .price{
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+.specialties .view-menu {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .specialties .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
 
 
 
@@ -337,5 +447,9 @@ menu .product h2{
         width: 25%;
         padding: 10px 10px;
         text-align: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
     }
 }

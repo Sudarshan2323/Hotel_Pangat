@@ -1,0 +1,270 @@
+<html>
+ <head>
+  <title>
+   Restaurant Menu
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .specialties, .menu {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .specialties {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .specialties h2, .menu h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .specialties p, .menu p {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+        .specialties .underline, .menu .underline {
+            width: 50px;
+            height: 3px;
+            background-color: #e74c3c;
+            margin: 10px auto 30px;
+        }
+        .specialties .cards, .menu .items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .specialties .card, .menu .item {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            text-align: left;
+            color: white;
+        }
+        .specialties .card img, .menu .item img {
+            width: 100%;
+            height: auto;
+        }
+        .specialties .card .content, .menu .item .content {
+            padding: 20px;
+        }
+        .specialties .card .content h3, .menu .item .content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .specialties .card .content p, .menu .item .content p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #b3b3b3;
+        }
+        .specialties .card .content .price, .menu .item .content .price {
+            font-size: 1.2em;
+            color: #e74c3c;
+        }
+        .specialties .view-menu {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .menu .categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .menu .categories button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .menu .categories button.inactive {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        .menu .items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .menu .item {
+            background-color: white;
+            color: #333;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu .item .content {
+            padding: 20px;
+        }
+        .menu .item .content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .menu .item .content p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #666;
+        }
+        .menu .item .content .price {
+            font-size: 1.2em;
+            color: #e74c3c;
+        }
+        @media (max-width: 768px) {
+            .specialties .cards, .menu .items {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <section class="specialties">
+   <h2>
+    Our Specialties
+   </h2>
+   <div class="underline">
+   </div>
+   <p>
+    Signature dishes crafted with passion
+   </p>
+   <div class="cards">
+    <div class="card">
+     <img alt="Premium Ribeye Steak with herb butter and side dishes" height="200" src="https://storage.googleapis.com/a1aa/image/BbSQLXpbJEaDBRfSkgLr4h06Vnh8SayXB36aUyPRGjRD2UEKA.jpg" width="300"/>
+     <div class="content">
+      <h3>
+       Premium Ribeye Steak
+      </h3>
+      <p>
+       28-day aged beef, grilled to perfection with herb butter
+      </p>
+      <div class="price">
+       $45.99
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <img alt="BBQ Lamb Chops with rosemary and garlic marinade" height="200" src="https://storage.googleapis.com/a1aa/image/aBdDW8EY5M49HFlG969EZrareDAgGwaAQjG7AZdewPFFspIUA.jpg" width="300"/>
+     <div class="content">
+      <h3>
+       BBQ Lamb Chops
+      </h3>
+      <p>
+       New Zealand lamb with rosemary and garlic marinade
+      </p>
+      <div class="price">
+       $38.99
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <img alt="Grilled Salmon with lemon butter sauce" height="200" src="https://storage.googleapis.com/a1aa/image/gRwjI3f4fSszIUTyUhhRyCL4rkJZFtrN7fUfKkiDCDDfgNFhC.jpg" width="300"/>
+     <div class="content">
+      <h3>
+       Grilled Salmon
+      </h3>
+      <p>
+       Atlantic salmon with lemon butter sauce
+      </p>
+      <div class="price">
+       $32.99
+      </div>
+     </div>
+    </div>
+   </div>
+   <a class="view-menu" href="#">
+    View Full Menu
+   </a>
+  </section>
+  <section class="menu">
+   <h2>
+    Our Menu
+   </h2>
+   <div class="underline">
+   </div>
+   <div class="categories">
+    <button>
+     Steaks
+    </button>
+    <button class="inactive">
+     Chicken
+    </button>
+    <button class="inactive">
+     Seafood
+    </button>
+    <button class="inactive">
+     Sides
+    </button>
+   </div>
+   <div class="items">
+    <div class="item">
+     <div class="content">
+      <h3>
+       Ribeye Steak
+      </h3>
+      <p>
+       Prime cut ribeye grilled to your preference, served with garlic butter
+      </p>
+      <div class="price">
+       $45.99
+      </div>
+     </div>
+    </div>
+    <div class="item">
+     <div class="content">
+      <h3>
+       Filet Mignon
+      </h3>
+      <p>
+       Tender beef filet with red wine reduction sauce
+      </p>
+      <div class="price">
+       $48.99
+      </div>
+     </div>
+    </div>
+    <div class="item">
+     <div class="content">
+      <h3>
+       T-Bone Steak
+      </h3>
+      <p>
+       24oz T-bone steak with herb-infused butter
+      </p>
+      <div class="price">
+       $52.99
+      </div>
+     </div>
+    </div>
+    <div class="item">
+     <div class="content">
+      <h3>
+       New York Strip
+      </h3>
+      <p>
+       12oz strip steak with peppercorn sauce
+      </p>
+      <div class="price">
+       $42.99
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
