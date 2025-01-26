@@ -61,6 +61,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 .item-list li{
     list-style: none;
@@ -161,103 +163,6 @@ nav {
 .home-img{
     margin-bottom: 90px;
 }
-/* .services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-}
-.service-title{
-    font-size: 45px;
-    margin-bottom: 35px;
-}
-.box{
-    height: auto;
-    width: 95%;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-.card{
-    height: 150px;
-    width: 300px;
-}
-.card:hover{
-    border: 2px solid black;
-}
-.card-logo{
-    height: 100%;
-    background-size: cover;
-    width: 100%;
-} */
-/* .special-menu{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    margin-top: 100px;
-    align-items: center;
-    height: auto;
-    width: 100%;
-}
-.special-menu h1{
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 15px;
-    margin-top: 25px;
-    border: none;
-    color: white;
-    border-bottom: 7px solid red;
-    border-radius: 50px;
-    width: 360px;
-    margin-bottom: 10px;
-}
-.menu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    height: auto;
-    margin-top: 30px;
-}
-.menu .product{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 300px;
-    background-color: rgb(41, 40, 40);
-    overflow: hidden;
-}
-.product img{
-    height: 70%;
-    width: 100%;
-}
-.product-name{
-    font-size: 35px;
-    padding: 0;
-    margin: 0;
-    color: white;
-}
-.menu .product h3{
-    font-size: 25px;
-    color: white;
-    margin: 0;
-    margin-bottom: 5px;
-}
-.menu .product h3 span{
-    font-size: 20px;
-    color: red;
-}
-.desc{
-    padding: 15px;
-} */
-
-
-
-
-
 
 .specialties{
     text-align: center;
@@ -282,8 +187,8 @@ nav {
 }
 .specialties .cards{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
 }
 .specialties .card {
@@ -295,6 +200,20 @@ nav {
     color: white;
     height: 450px;
 }
+.container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  .item {
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+    width: 300px; /* Adjust min-width as needed */
+  }
 .specialties .card img{
     width: 100%;
     height: 70%;
@@ -324,13 +243,53 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
+    width: 150px;
 }
-@media (max-width: 768px) {
-    .specialties .cards{
-        flex-direction: column;
-        align-items: center;
-    }
+.features {
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
 }
+.features .service-list{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+}
+.features .service-list .feature {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid gray;
+}
+.features .service-list .feature i {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+.features .service-list .feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.features .service-list .feature p {
+    font-size: 16px;
+    color: #666;
+}
+.features h2{
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+}
+.features .underline{
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c;
+    margin: 10px auto 30px;
+}
+
 
 
 
@@ -367,6 +326,10 @@ nav {
         padding: 0px;
         margin: 0px;
         height: auto;
+    }
+    .item-list{
+        padding: 0;
+        margin: 0;
     }
 
     .nav-links li {
@@ -452,4 +415,45 @@ nav {
         display: flex;
         flex-direction: column;
     }
+    .specialties{
+        margin-top: 50px;
+        padding-top: 20px;
+    }
+    .specialties .cards{
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .specialties .card{
+        max-width: 250px;
+        height: 300px;
+        display: inline-block;
+    }
+    .specialties .card .content{
+        padding: 10px;
+    }
+    .specialties .card .content h3{
+        margin: 0;
+        font-size: 1.2em;
+    }
+    .specialties .card .content p{
+        margin: 0;
+        font-size: 1em;
+        color: #b3b3b3;
+    }
+    .specialties .card .content .price{
+        font-size: 1em;
+        color: #e74c3c;
+    }
+    .specialties .view-menu{
+        margin-top: 15px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px;
+    }
+
 }
