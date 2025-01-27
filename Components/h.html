@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Food Ordering</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.product-card {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 150px;
+  height: auto;
+}
+
+.card-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.card-details img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Online Food Ordering</h1>
+
+<div id="products">
+  <div class="product-card">
+    <img src="../Images/fish1.jpg" alt="Pizza">
+    <h3>Pizza</h3>
+    <p>Delicious Margherita Pizza</p>
+    <button onclick="showDetails(this)">Order Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="../Images/fish.jpg" alt="Burger">
+    <h3>Burger</h3>
+    <p>Juicy Beef Burger</p>
+    <button onclick="showDetails(this)">Order Now</button>
+  </div>
+
+</div>
+
+<div id="cardDetails" class="card-details">
+  <span class="close-button" onclick="closeDetails()">×</span>
+  <img id="productImage" src="" alt="">
+  <h2 id="productName"></h2>
+  <p id="productDescription"></p>
+  <button>Add to Cart</button>
+</div>
+
+<script>
+function showDetails(button) {
+  var cardDetails = document.getElementById("cardDetails");
+  var productCard = button.parentElement;
+
+  var productImage = productCard.querySelector("img").src;
+  var productName = productCard.querySelector("h3").textContent;
+  var productDescription = productCard.querySelector("p").textContent;
+
+  document.getElementById("productImage").src = productImage;
+  document.getElementById("productName").textContent = productName;
+  document.getElementById("productDescription").textContent = productDescription;
+
+  cardDetails.style.display = "block";
+}
+
+function closeDetails() {
+  document.getElementById("cardDetails").style.display = "none";
+}
+</script>
+
+</body>
+</html>
