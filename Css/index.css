@@ -580,10 +580,11 @@ nav {
     }
     .features .service-list{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .features .service-list .feature{
         padding: 10px;
+        gap: 12px;
     }
     .features .service-list .feature h3{
         font-size: 18px;
