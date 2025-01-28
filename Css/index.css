@@ -580,13 +580,27 @@ nav {
     }
     .features .service-list{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .features .service-list .feature{
+        padding: 10px;
+        width: 50%;
+    }
+    .features .service-list .feature h3{
+        font-size: 18px;
+    }
+    .features .service-list .feature p{
+        font-size: 13px;
     }
     .about{
         width: 100%;
         padding: 0;
+        height: auto;
         margin: 0;
         height: fit-content;
+    }
+    .about h2{
+        padding-top: 20px;
     }
     .about .underline{
         margin-bottom: 10px;
@@ -596,27 +610,19 @@ nav {
         overflow: hidden;
         margin: 0;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding-bottom: 30px;
     }
     .about-content .img-content{
-        display: flex;
+        display: none;
         width: 100%;
     }
     .img1{
-        z-index: 0;
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-        width: 200px;
-        height: 200px;
+
+        display: none;
     }
     .img2{
-        z-index: 0;
-        margin: 0;
-        height: 200px;
-        padding: 0;
-        width: 300px;
-        background-size: cover;
+        display: none;
     }
 
     .about-text{
@@ -625,9 +631,10 @@ nav {
         margin-right: 15px;
     }
     .about-text h4{
-        font-size: 15px;
+        font-size: 22px;
         margin: 0;
         padding: 0;
-        width: 80%;
+        padding: 20px;
+        width: 100%;
     }
 }
