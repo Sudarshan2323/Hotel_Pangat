@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",serif;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.back{
+    display: flex;
+}
+
+.search-bar {
+    margin-bottom: 1rem;
+    margin-top: 35px;
+    width: 80%;
+    height: 40px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 21px;
+    font-family: "poppins",serif;
+}
+.input :focus{
+    border: 2px solid red;
+}
+
+.menu-item {
+    border: 2px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+#menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+img{
+    height: 250px;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+
+

@@ -74,7 +74,7 @@ body {
   <span class="close-button" onclick="closeDetails()">×</span>
   <img id="productImage" src="" alt="">
   <h2 id="productName"></h2>
-  <p id="productDescription"></p>
+  <p id="price"></p>
   <button>Add to Cart</button>
 </div>
 
@@ -89,7 +89,7 @@ function showDetails(button) {
 
   document.getElementById("productImage").src = productImage;
   document.getElementById("productName").textContent = productName;
-  document.getElementById("productDescription").textContent = productDescription;
+  document.getElementById("price").textContent = productDescription;
 
   cardDetails.style.display = "block";
 }

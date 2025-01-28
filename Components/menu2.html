@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+<link rel="stylesheet" href="../Css/index.css">
+<link rel="stylesheet" href="../Css/menu2.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="../Images/logo1.png" alt="Pangat_Hotel" > -->
+             <h1>Hotel_Pangat</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Book Table</a></li>
+        </ul>
+        <div class="nav-list">
+            <ul class="item-list">
+                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
+                <li><a href="#"><img src="../icon/cart.png" alt=""></a></li>
+                <div class="burger">
+                    <img src="../icon/menu.png" alt="bar" class="open">
+                </div>
+                <img src="../icon/close.png" alt="close" class="close">
+
+            </ul>
+        </div>
+        
+    </nav>
+    <header>
+        <h1>Restaurant Menu</h1>
+    </header>
+
+    <center>
+        <div class="container" style="width: 95%;z-index: 2;" id="back">
+        <ul class="item">
+            <li style="margin: 0;"><a href="#" onclick="filterItems('all')">All</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('veg')">Veg</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('chicken')">Chicken</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('mutton')">Mutton</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('fish')">Fish</a></li>
+        </ul>
+        </div>
+    </center>
+
+    <center><div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
+    </div></center>
+    <div class="container">
+        <div id="menu-list">
+            </div>
+    </div>
+
+    <script>
+        const menuItems = [
+            { name: "Veg Biryani", type: "veg",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Paneer Tikka Masala", type: "veg",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Dal Makhani", type: "veg",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Chicken Curry", type: "chicken",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Butter Chicken", type: "chicken",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Chicken Tikka", type: "chicken",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Mutton Rogan Josh", type: "mutton",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Mutton Biryani", type: "mutton",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Fish Fry", type: "fish",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"},
+            { name: "Fish Curry", type: "fish",desc:"The delicoius food for a healthy life to live long" ,price:"999", pic : "../Images/about_t2.jpg"}
+        ];
+
+        function displayMenuItems(items) {
+            const menuList = document.getElementById('menu-list');
+            menuList.innerHTML = "";
+
+            items.forEach(item => {
+                const menuItem = document.createElement('div');
+                menuItem.classList.add('menu-item');
+                menuItem.innerHTML = `<div class="card">
+                <img src=${item.pic} >
+                <div class="content">
+                <h3>${item.name}</h3>
+                <p>${item.desc}</p> 
+                <p>Price: ${item.price}</p>
+                </div>
+                </div>`;
+                menuList.appendChild(menuItem);
+            });
+        }
+
+        function filterItems(type) {
+            let filteredItems = menuItems;
+
+            if (type !== 'all') {
+                filteredItems = menuItems.filter(item => item.type === type);
+            }
+
+            displayMenuItems(filteredItems);
+        }
+
+        function searchItems() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const filteredItems = menuItems.filter(item => item.name.toLowerCase().includes(searchInput));
+            displayMenuItems(filteredItems);
+        }
+
+        // Initial display of all menu items
+        displayMenuItems(menuItems);
+    </script>
+    <script src="../Javascript/index.js"></script>
+
+</body>
+</html>

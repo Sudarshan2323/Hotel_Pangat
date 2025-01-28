@@ -19,15 +19,15 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact us</a></li>
             <li><a href="#">Book Table</a></li>
         </ul>
         <div class="nav-list">
             <ul class="item-list">
-                <li><a href="#"><img src="../icon/login.png" alt="">Login</a></li>
-                <li><a href="#"><img src="../icon/cart.png" alt="">Cart</a></li>
+                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
+                <li><a href="#"><img src="../icon/cart.png" alt=""></a></li>
                 <div class="burger">
                     <img src="../icon/menu.png" alt="bar" class="open">
                 </div>
@@ -42,8 +42,7 @@
             <div class="text-title">
                 <h1>Healthy food to live a healthier life in future</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, at. Cupiditate, ipsam! Quod ipsam accusantium, repudiandae voluptatibus fugiat dolor reprehenderit quidem itaque! Enim, molestias.</p>
-                <a href="#"><button id="home-btn">Order now</button>
-                </a>
+                <center><a href="#"><button id="home-btn">Order now</button></a></center>
             </div>
             <div class="home-img">
                 <img src="../Images/special_thali2.png" alt="">
@@ -102,69 +101,90 @@
             <div class="container">
                 
             <div class="item">
-             <div class="card">
+            <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish1.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
              </div>
              <div class="item">
-             <div class="card">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
+                <div class="card" onclick="showDetails(this)">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
             </div>
             <div class="item">
-             <div class="card">
+             <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
             </div>
             <div class="item">
-             <div class="card">
+             <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
             </div>
             <div class="item">
-             <div class="card">
+             <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
             </div>
             <div class="item">
-             <div class="card">
+             <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish1.jpg" width="300"/>
               <div class="content">
                <h3>Grilled Salmon</h3>
                <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <div class="price">$32.99</div>
+               <p class="price">$32.99</p>
               </div>
              </div>
              </div>
             </div>
             <center><a class="view-menu" href="#"> View Full Menu </a></center>
+            <div id="cardDetails" class="card-details">
+                <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
+                <img id="productImage" src="" alt="">
+                <h2 id="productName"></h2>
+                <p id="price"></p>
+                <button>Add to Cart</button>
+              </div>
         </section>
 
+
+        <div class="about">
+            <h2>About us</h2>
+            <div class="underline"></div>
+            <div class="about-content">
+                <div class="img-content">
+                    <img src="../Images/about_c2.jpg" alt="" class="img1">
+                    <img src="../Images/about_t1.jpg" alt="" class="img2">
+                </div>
+                <div class="about-text">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iure aliquam? Eveniet quae explicabo consequuntur exercitationem dignissimos in, quam quibusdam perferendis? Maiores eos nemo, quos pariatur accusantium temporibus esse dignissimos ea excepturi neque quod similique tenetur ex vero quaerat quidem magnam ducimus sunt assumenda laudantium.</h4>
+                </div>
+            </div>
+        </div>
 
 
         

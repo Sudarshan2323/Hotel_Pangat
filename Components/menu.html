@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body> 
+    <nav>
+        <div class="logo">
+            <!-- <img src="../Images/logo1.png" alt="Pangat_Hotel" > -->
+             <h1>Hotel_Pangat</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Book Table</a></li>
+        </ul>
+        <div class="nav-list">
+            <ul class="item-list">
+                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
+                <li><a href="#"><img src="../icon/cart.png" alt=""></a></li>
+                <div class="burger">
+                    <img src="../icon/menu.png" alt="bar" class="open">
+                </div>
+                <img src="../icon/close.png" alt="close" class="close">
+
+            </ul>
+        </div>    
+    </nav>
+
+    <header>
+        <h2>Menu</h2>
+        <div class="underline"></div>
+    </header>
+    <div class="list">
+        <ul class="menubar">
+            <li style="margin: 0;"><a href="#" onclick="filterItems('all')">All</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('veg')">Veg</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('chicken')">Chicken</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('mutton')">Mutton</a></li>
+            <li style="margin: 0;"><a href="#" onclick="filterItems('fish')">Fish</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <center><div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
+        </div></center>
+        <div class="container">
+            <div id="menu-list">
+                </div>
+        </div>
+    </section>
+
+    <script src="../Javascript/menu.js"></script>
+    <script src="../Javascript/index.js"></script>
+</body>
+</html>
