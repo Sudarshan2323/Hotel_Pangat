@@ -25,7 +25,7 @@
         <div class="nav-list">
             <ul class="item-list">
                 <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
-                <li><a href="#"><img src="../icon/cart.png" alt=""></a></li>
+                <li><a href="cart.html"><img src="../icon/cart.png" alt=""></a></li>
                 <div class="burger">
                     <img src="../icon/menu.png" alt="bar" class="open">
                 </div>
@@ -52,14 +52,23 @@
     <section>
         <center><div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
-        </div></center>
-        <div class="container">
+        </div>
+        <div class="menu-container">
             <div id="menu-list">
                 </div>
         </div>
+        </center>
     </section>
+    <div id="cardDetails" class="card-details">
+        <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
+        <img id="productImage" src=" " alt="">
+        <h2 id="productName"></h2>
+        <p id="price"></p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
 
     <script src="../Javascript/menu.js"></script>
     <script src="../Javascript/index.js"></script>
+    <script src="../Javascript/cart.js"></script>
 </body>
 </html>
