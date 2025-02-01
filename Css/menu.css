@@ -60,7 +60,7 @@ header .underline{
   .search-bar {
     margin-bottom: 1rem;
     margin-top: 5px;
-    width: 80%;
+    width: 500px;
     height: 40px;
     overflow: hidden;
 }
@@ -87,9 +87,9 @@ input{
 
 
 .menu-item {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 1rem;
-    width: 260px;
+    width: 270px;
     border-radius: 5px;
 }
 
@@ -100,12 +100,13 @@ input{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 80%;
+    width: 100%;
     margin-left: 45px;
 }
 .menu-card{
     height: 100%;
-    background-color: #333;
+    width: 100%;
+    background-color: #dc1a1a;
 }
 .menu-card h3{
     color: white;
@@ -114,7 +115,7 @@ input{
     padding-left: 10px;
 }
 .menu-card .price{
-    color: red;
+    color: white;
     font-size: 1.2em;
     text-align: left;
     padding-left: 10px;
@@ -125,7 +126,7 @@ img{
     padding: 0;
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +137,19 @@ img{
     display: flex;
     width: 300px;
     overflow: hidden;
+  }
+.menu-card h3{
+    margin: 0;
+}
+  .menu-card .desc{
+    color: white;
+    margin: 0;
+    margin-left: 8px;
+    text-align: left;
+  }
+  .menu-card .price{
+    margin: 0;
+    margin-bottom: 5px;
   }
 
 
@@ -155,4 +169,31 @@ img{
         width: 350px; 
         margin: 0;
       }
+    .search-bar{
+        width: 85%;
+    }
+    .menu-item{
+        width: 240px;
+        margin: 0;
+        height: 260px;
+        overflow: hidden;
+    }
+    .menu-card{
+    width: auto;
+    }
+    .menu-card img{
+        height: 65%;
+    }
+    .menu-card h3{
+        font-size: 18px;
+        margin: 0;
+    }
+    .menu-card .desc{
+        font-size: 13px;
+        width: 99%;
+    }
+    .menu-card .price{
+        font-size: 14px;
+        margin: 0;
+    }
 }

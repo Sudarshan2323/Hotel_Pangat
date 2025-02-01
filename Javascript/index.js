@@ -25,11 +25,14 @@ function showDetails(button) {
     var productImage = productCard.querySelector("img").src;
     var productName = productCard.querySelector("h3").textContent;
     var productDescription = productCard.querySelector("p").textContent;
+    var price = productCard.querySelector("h4").textContent;
+
   
     document.getElementById("productImage").src = productImage;
     document.getElementById("productName").textContent = productName;
-    document.getElementById("price").textContent = productDescription;
-  
+    document.getElementById("desc").textContent = productDescription;
+    document.getElementById("price").textContent = price;
+ 
     cardDetails.style.display = "block";
   }
   

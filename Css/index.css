@@ -197,43 +197,55 @@ nav {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    height: 300px;
   }
   
   .item {
     display: inline-block;
     padding: 10px;
     display: flex;
-    width: 300px; /* Adjust min-width as needed */
+    width: 300px; 
   }
   .card {
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    width: 250px;
     text-align: left;
     color: white;
-    height: 350px;
+    height: 280px;
 }
  .card img{
     width: 100%;
-    height: 70%;
+    height: 100%;
+    z-index: -1;
 }
  .card .content{
     padding: 20px;
     padding-top: 10px;
+    z-index: 5;
+    margin-top: -90px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
 }
  .card .content h3{
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+.card .content h5{
+    margin: 0;
+    font-size: 1.4em;
 }
  .card .content p{
-    margin: 10px 0;
+    margin: 0;
     font-size: 1em;
     color: #b3b3b3;
+    display: none;
 }
 .specialties .card .content .price{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #e74c3c;
+    margin: 0;
 }
 .specialties .view-menu {
     display: inline-block;
@@ -365,7 +377,7 @@ nav {
   
   .card-details img {
     width: 100%;
-    height: 70%;
+    height: 65%;
     margin-bottom: 10px;
   }
   
@@ -374,13 +386,28 @@ nav {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    
   }
   .card-details #productName{
     margin: 0;
+    font-size: 2rem;
+    text-align: left;
   }
-  .card-details #productName #price{
+  .card-details p{
+    margin: 0;
+    text-align: left;
+  }
+  .card-details #price{
     margin: 0;
   }
+  .card-details button{
+    padding: 7px;
+    border: 1px solid red;
+    background-color: rgb(243, 67, 67);
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+}
 
 
 
@@ -404,8 +431,11 @@ nav {
     font-style: normal;
   }
   .logo h1{
-    font-size: 23px;
+    font-size: 20px;
     padding-left: 8px;
+  }
+  nav{
+    height: 50px;
   }
     .nav-links {
         position: absolute;
@@ -425,7 +455,7 @@ nav {
         align-items: center;
         width: 100%;
         font-family: "Poppins", serif;
-        top: 70px;
+        top: 60px;
         padding: 0px;
         margin: 0px;
         height: auto;
@@ -544,6 +574,7 @@ nav {
     .specialties{
         margin-top: 50px;
         padding-top: 20px;
+        padding-bottom: 10px;
     }
     .specialties .cards{
         display: flex;
@@ -551,21 +582,29 @@ nav {
         overflow-x: auto;
         white-space: nowrap;
     }
+    .specialties .cards .container{
+        height: 260px;
+    }
     .specialties .cards .container .item{
-        width: 250px;
+        width: 240px;
     }
     .specialties .card{
-        width: 180px;
-        height: 200px;
+        width: 240px;
+        height: 250px;
         display: inline-block;
     }
+    .card img{
+        height: 100%;
+    }
+
     .specialties .card .content{
         padding: 0;
         padding-left: 8px;
+        margin-top: -70px ;
     }
     .specialties .card .content h3{
         margin: 0;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .specialties .card .content p{
         margin: 0;
@@ -573,11 +612,13 @@ nav {
         color: #b3b3b3;
     }
     .specialties .card .content .price{
-        font-size: 1em;
+        font-size: 1.1em;
         color: #e74c3c;
     }
     .specialties .view-menu{
         margin-top: 15px;
+        font-size: 15px;
+        padding: 10px 5px;
     }
     .features{
         display: flex;
@@ -643,5 +684,28 @@ nav {
         padding: 0;
         padding: 20px;
         width: 100%;
+    }
+    .card-details{
+        max-height: 300px;
+        width: 250px;
+    }
+    .card-details img{
+        height: 60%;
+        margin: 0;
+    }
+    .card-details #productName{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .card-details #desc{
+        font-size: 14px;
+    }
+    .card-details button{
+        padding: 7px;
+        border: 1px solid red;
+        background-color: rgb(243, 67, 67);
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
     }
 }

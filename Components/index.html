@@ -101,76 +101,103 @@
             <div class="container">
                 
             <div class="item">
-            <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish1.jpg" width="300"/>
+             <div class="card" onclick="showDetails(this)">
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Fish Curry</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
              </div>
+
+            <div class="item">
+             <div class="card" onclick="showDetails(this)">
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_biryani.jpg" width="300"/>
+              <div class="content">
+               <h3>Mutton Biryani</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
+              </div>
+             </div>
+             </div>
+
              <div class="item">
-                <div class="card" onclick="showDetails(this)">
-                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
+             <div class="card" onclick="showDetails(this)">
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_tikka.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Chicken Tikka</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
-            </div>
-            <div class="item">
+             </div>
+
+             <div class="item">
              <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Butter_chicken.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Butter Chicken</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
-            </div>
-            <div class="item">
+             </div>
+
+             <div class="item">
              <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Chicken Curry</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
-            </div>
-            <div class="item">
+             </div>
+
+             <div class="item">
              <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish.jpg" width="300"/>
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_Rogan_josh.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Mutton Rogan Josh</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
-            </div>
-            <div class="item">
+             </div>
+
+             <div class="item">
              <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/fish1.jpg" width="300"/>
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_fry.jpg" width="300"/>
               <div class="content">
-               <h3>Grilled Salmon</h3>
-               <!-- <p>Atlantic salmon with lemon butter </p> -->
-               <p class="price">$32.99</p>
+               <h3>Fish Fry</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
+              </div>
+             </div>
+             </div>
+
+             <div class="item">
+             <div class="card" onclick="showDetails(this)">
+              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/veg_biryani.jpg" width="300"/>
+              <div class="content">
+               <h3>veg Biryani</h3>
+               <p>Atlantic salmon with lemon butter </p>
+               <h4 class="price">Rs.32.99</h4>
               </div>
              </div>
              </div>
             </div>
             <center><a class="view-menu" href="menu.html"> View Full Menu </a></center>
-            <div id="cardDetails" class="card-details">
-                <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
-                <img id="productImage" src="" alt="">
-                <h2 id="productName"></h2>
-                <p id="price"></p>
-                <button onclick="addToCart()">Add to Cart</button>
-            </div>
         </section>
-
+        <div id="cardDetails" class="card-details">
+            <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
+            <img id="productImage" src=" " alt="">
+            <h2 id="productName"></h2>
+            <p id="desc"></p>
+            <h4 id="price"></h4>
+            <button onclick="addToCart()" onclick="closeDetails()">Add to Cart</button>
+          </div>
 
         <div class="about">
             <h2>About us</h2>

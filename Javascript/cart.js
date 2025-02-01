@@ -14,9 +14,10 @@ function displayCart() {
             <img src="${item.image}" alt="${item.name}">
             <div>
                 <h3>${item.name}</h3>
-                <p>Price: ${item.price}</p>
+                <p> ${item.desc} </p>
+                <h4 class="price">${item.price}</h4>
+            <button onclick=delcart() >Delete Cart</button>
             </div>
-            <button onclick='console.log(${item.name})' >Delete Cart</button>
         `;
         cartContainer.appendChild(itemDiv);
     });
@@ -31,11 +32,15 @@ function goBack() {
     window.history.back();
 }
 
-const delcart=(Index)=>{
-    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    cartItems.splice(Index, 1); 
-    localStorage.setItem('cart', JSON.stringify(cartItems));
-    displayCart(); 
-}
+// const delcart=(Index)=>{
+//     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+//     cartItems.splice(Index, 1); 
+//     localStorage.setItem('cart', JSON.stringify(cartItems));
+//     displayCart(); 
+// }
 
 window.onload = displayCart;
+
+function delcart(){
+    localStorage.removeItem('cart.[name]');
+}
