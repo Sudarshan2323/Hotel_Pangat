@@ -35,9 +35,7 @@
                 <p>07:00 PM - 11:00 PM</p>
             </div>
         </div>
-
-        <!-- Right Box -->
-        <div class="right-box">
+ <div class="right-box">
             <h2>Send us a Message</h2>
             <form method="post" action="contact.php">
                 <input type="text" name="name" placeholder="Full Name" required>
