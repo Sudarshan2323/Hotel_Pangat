@@ -13,7 +13,7 @@ const menuItems = [
 
 function displayMenuItems(items) {
     const menuList = document.getElementById('menu-list');
-    menuList.innerHTML = "";
+    menuList.innerHTML = " ";
 
     items.forEach(item => {
         const menuItem = document.createElement('div');
@@ -50,7 +50,10 @@ function searchItems() {
 displayMenuItems(menuItems);
 
 
-
+ 
+function closeDetails() {
+    document.getElementById('cardDetails').style.display = 'none';
+}
 
 
 
@@ -84,6 +87,7 @@ function addToCart() {
     window.location.href = 'cart.html'; 
 }
 
-function closeDetails() {
-    document.getElementById('cardDetails').style.display = 'none';
-}
+
+
+
+

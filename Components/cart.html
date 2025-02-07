@@ -5,7 +5,6 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="../Css/index.css">
     <link rel="stylesheet" href="../Css/cart.css">
-    <link rel="stylesheet" href="../Css/menu.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <style>
@@ -23,7 +22,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#">Contact us</a></li>
             <li><a href="#">Book Table</a></li>
         </ul>
@@ -40,13 +39,22 @@
         </div>    
     </nav>
 
-    <h1>Your Shopping Cart</h1>
+    <h1 style="text-align: center;">Your Shopping Cart</h1>
     <div id="cartItems"></div>
     <button onclick="clearCart()">Clear Cart</button>
     <button onclick="goBack()">Continue Shopping</button>
 
+    <div id="cardDetails" class="card-details">
+        <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
+        <img id="productImage" src=" " alt="">
+        <h2 id="productName"></h2>
+        <p id="desc"></p>
+        <h4 id="price"></h4>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
 
     <script src="../Javascript/cart.js"></script>
     <script src="../Javascript/index.js"></script>
+    <script src="../Javascript/menu.js"></script>
 </body>
 </html>

@@ -11,12 +11,13 @@ function displayCart() {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'cart-item';
         itemDiv.innerHTML = `
+            <div class="car" onclick="showDetails(this)">
             <img src="${item.image}" alt="${item.name}">
             <div>
-                <h3>${item.name}</h3>
-                <p> ${item.desc} </p>
-                <h4 class="price">${item.price}</h4>
-            <button onclick=delcart() >Delete Cart</button>
+                 <h3>${item.name}</h3>
+               <!-- <p>${item.desc}</p>-->
+                <h4 class="price">${item.price}</h4> 
+            </div>
             </div>
         `;
         cartContainer.appendChild(itemDiv);
@@ -31,6 +32,9 @@ function clearCart() {
 function goBack() {
     window.history.back();
 }
+function gobuy(){
+    window.location.href = 'buy.html'
+}
 
 // const delcart=(Index)=>{
 //     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
@@ -44,3 +48,4 @@ window.onload = displayCart;
 function delcart(){
     localStorage.removeItem('cart.[name]');
 }
+

@@ -371,7 +371,7 @@ nav {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 400px;
+    height: auto;
     z-index: 10;
   }
   
@@ -392,6 +392,7 @@ nav {
     margin: 0;
     font-size: 2rem;
     text-align: left;
+    margin: 10px;
   }
   .card-details p{
     margin: 0;
@@ -419,7 +420,7 @@ nav {
 
 
 /* Media Query for smaller screens */
-@media (max-width: 920px) {
+@media (max-width: 768px) {
     html,body{
         margin: 0px;
         padding: 0px;
@@ -686,8 +687,9 @@ nav {
         width: 100%;
     }
     .card-details{
-        height: 300px;
+        height: auto;
         width: 90%;
+        max-width: 300px;
     }
     .card-details img{
         height: 60%;
