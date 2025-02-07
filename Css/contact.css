@@ -1,4 +1,3 @@
-/* style.css */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -102,3 +101,77 @@ h2{
         flex-direction: column-reverse; 
     }
 }
+/* *body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.left-box, .right-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.left-box {
+    width: 40%;
+    color: #333;
+}
+
+.right-box {
+    width: 60%;
+}
+
+.left-box h2 {
+    color: #067cfb;
+}
+
+.left-box p, .left-box h3 {
+    margin: 0 0 10px;
+}
+
+.info-box {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.info-box h3 {
+    margin: 0 0 5px;
+    color: #007BFF;
+}
+
+.right-box form input, 
+.right-box form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-box form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-box form button:hover {
+    background: #0057b3;
+>>>>>>> 99ef198d6c2ae292deba6bc80f0d0af620dd173c
+} */
