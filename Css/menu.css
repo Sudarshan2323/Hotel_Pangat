@@ -91,6 +91,7 @@ input{
     margin-bottom: 1rem;
     width: 270px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .menu-item h3 {
@@ -105,8 +106,9 @@ input{
 }
 .menu-card{
     height: 100%;
-    width: 100%;
+    width: auto;
     background-color: #dc1a1a;
+    padding: 10px;
 }
 .menu-card h3{
     color: white;
@@ -175,11 +177,12 @@ img{
     .menu-item{
         width: 240px;
         margin: 0;
-        height: 260px;
+        height: auto;
         overflow: hidden;
     }
     .menu-card{
     width: auto;
+    height: auto;
     }
     .menu-card img{
         height: 65%;
