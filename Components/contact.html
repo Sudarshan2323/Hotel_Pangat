@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/Css/contact.css">
-    <link rel="stylesheet" href="/Css/index.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/contact.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
     <nav>
@@ -16,9 +19,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Menu</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
             <li><a href="#">Book Table</a></li>
         </ul>
         <div class="nav-list">
@@ -31,67 +34,52 @@
                 <img src="../icon/close.png" alt="close" class="close">
 
             </ul>
-        </div>
-        
+        </div>    
     </nav>
 
-            <h2>Contact Us</h2>
-               <div class="underline">
-               </div>
-
-    <section class="contact-page">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet eum reiciendis fuga maxime laudantium!</p>
-
-                <div class="contact-details">
-                    <div class="detail">
-                        <i class="fas fa-envelope"></i> <span id="email">hotelPangat@gmail.com</span>
-                    </div>
-                    <div class="detail">
-                        <i class="fas fa-phone"></i> <span id="phone">+91 1234567895</span>
-                    </div>
-                    <div class="detail">
-                        <i class="fas fa-map-marker-alt"></i> <span id="address">Korochi road, near sugar factory , Korochi , Maharashtra, India</span>
-                    </div>
-                </div>
-
-                <div class="Opening-hours">
-                    <h3>Opening Hours</h3>
-                    <p>Monday-Saturday :</p> 
-                    <p>11:00 AM - 03:00 PM</p>
-                    <p>07:00 PM - 11:00 PM </p>
-                </div>
+    <header>
+        <h2>Contact Us</h2>
+        <div class="underline"></div>
+    </header>
+    <div class="container">
+        <div class="contact-details">
+            <h2>Get In Touch</h2>
+            <div class="location">
+                <h3><i class='bx bxs-map' ></i>Location</h3>
+                <p>PC8V+HC3, Station Road, Korochi, Ichalkaranji, Maharashtra 416121</p>
+            </div>
+            <div class="mail">
+                <h3><i class='bx bxs-envelope' ></i>Mail</h3>
+                <p>pangathotel@gmail.com</p>
+            </div>
+            <div class="call">
+                <h3><i class='bx bxs-phone' ></i>Call</h3>
+                <p>+91 9075777575, +91 9145111586</p>
+            </div>
+            <div class="Opening-hours">
+                <h3><i class='bx bxs-time'></i>Opening Hours</h3>
+                <p style="margin: 7px 7px;">Monday-Saturday : 
+                <li>11:00 AM - 03:00 PM
+                <li>7 PM - 11:00 PM 
+                </p>
             </div>
 
-            <div class="contact-form">
-                <h2>Send us a Message</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
         </div>
-    </section>
-
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script> <script src="script.js"></script>
-    <script src="/Javascript/contact.js"></script>
-    <script src="/Javascript/index.js"></script>
+        <div class="enquiry-form">
+            <h2>Enquiry Form</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="contactNo" name="contactNo" placeholder="Contact No." required>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <div class="buttons">
+                <button type="submit">SEND MESSAGE</button>
+                <button type="reset" id="resetButton">RESET</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="get.js"></script>
 </body>
 </html>

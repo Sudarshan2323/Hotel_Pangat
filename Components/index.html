@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Css/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         </style>
@@ -14,12 +15,13 @@
 <body>
     <nav>
         <div class="logo">
-            <!-- <img src="../Images/logo1.png" alt="Pangat_Hotel" > -->
-             <h1>Hotel_Pangat</h1>
+            <img src="../Images/logo1.png" alt="Pangat_Hotel" > 
+             <!-- <h1>Hotel_Pangat</h1>-->
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact us</a></li>
             <li><a href="#">Book Table</a></li>
@@ -32,7 +34,6 @@
                     <img src="../icon/menu.png" alt="bar" class="open">
                 </div>
                 <img src="../icon/close.png" alt="close" class="close">
-
             </ul>
         </div>
         
@@ -40,12 +41,12 @@
     <main>
         <section id="home-page">
             <div class="text-title">
-                <h1>Healthy food to live a healthier life in future</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, at. Cupiditate, ipsam! Quod ipsam accusantium, repudiandae voluptatibus fugiat dolor reprehenderit quidem itaque! Enim, molestias.</p>
-                <center><a href="#"><button id="home-btn">Order now</button></a></center>
+                <h1>Enjoy our Delicious meal</h1>
+                <p>Through booking your table at hotel pangat instantly. Enjoy a hassle-free and unforgettable dining moment while exploring special yummy dishes. Saver tasty food delivered to your Eat with relish!</p>
+                <a href="#"><button id="home-btn">Order now</button></a>
             </div>
             <div class="home-img">
-                <img src="../Images/special_thali2.png" alt="">
+                <img src="../Images/Thali-img.png" alt="">
             </div>
         </section>
 
@@ -61,7 +62,7 @@
               Easy To Order
              </h3>
              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Users can order their yummy and fav dish easily. 
              </p>
             </div>
             <div class="feature">
@@ -71,7 +72,7 @@
               Fastest Delivery
              </h3>
              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              We provide Fastest Delivery as soon as possible.
              </p>
             </div>
             <div class="feature">
@@ -81,7 +82,7 @@
               Best Quality
              </h3>
              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              We provide excellent quality and delicious food. 
              </p>
             </div>
             </div>
@@ -104,9 +105,11 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Fish Curry</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Veg Maharashrian Thali</h3>
+               <p>2 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice | 1 
+                Sweet|1Papad 
+                </p>
+               <h4 class="price">Rs.220</h4>
               </div>
              </div>
              </div>
@@ -115,9 +118,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_biryani.jpg" width="300"/>
               <div class="content">
-               <h3>Mutton Biryani</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Veg Panjabi Thali</h3>
+               <p>1 Paneer Bhaji | 1 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice|1Sweet | 1 Papad </p>
+               <h4 class="price">Rs.220</h4>
               </div>
              </div>
              </div>
@@ -126,9 +129,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_tikka.jpg" width="300"/>
               <div class="content">
-               <h3>Chicken Tikka</h3>
-               <p>Atlantic salmon with lemon butter Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt dolor iure nam maxime laborum. </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Chicken Fry Thali </h3>
+               <p>1 Plate Chicken Fry, 1 Plate Chicken Masala, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda. </p>
+               <h4 class="price">Rs.270</h4>
               </div>
              </div>
              </div>
@@ -137,9 +140,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Butter_chicken.jpg" width="300"/>
               <div class="content">
-               <h3>Butter Chicken</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Surmai Thali</h3>
+               <p>1 PCS Surmai, Fish kari, Zinga Wati, 3 Chapati OR Bhakri OR Roti, Rice Plate, Solkadi, Dahi Kanda. </p>
+               <h4 class="price">As per need</h4>
               </div>
              </div>
              </div>
@@ -148,9 +151,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Chicken Curry</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Chicken Gavaran Thali </h3>
+               <p>1 Plate Chicken Fry, 1 Plate Chicken Gavran, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda.  </p>
+               <h4 class="price">Rs.290</h4>
               </div>
              </div>
              </div>
@@ -159,9 +162,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_Rogan_josh.jpg" width="300"/>
               <div class="content">
-               <h3>Mutton Rogan Josh</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Muttont Gavaran Thali </h3>
+               <p>1 Plate Mutton Fry, 1 Plate Mutton Gavran, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda. </p>
+               <h4 class="price">Rs.390</h4>
               </div>
              </div>
              </div>
@@ -170,9 +173,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_fry.jpg" width="300"/>
               <div class="content">
-               <h3>Fish Fry</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Chicken Lolipop</h3>
+               <p></p>
+               <h4 class="price">Rs.270</h4>
               </div>
              </div>
              </div>
@@ -181,9 +184,9 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/veg_biryani.jpg" width="300"/>
               <div class="content">
-               <h3>veg Biryani</h3>
-               <p>Atlantic salmon with lemon butter </p>
-               <h4 class="price">Rs.32.99</h4>
+               <h3>Murg Muslam</h3>
+               <p></p>
+               <h4 class="price">Rs.430</h4>
               </div>
              </div>
              </div>
@@ -205,20 +208,76 @@
             <div class="about-content">
                 <div class="img-content">
                     <img src="../Images/about_c2.jpg" alt="" class="img1">
-                    <img src="../Images/about_t1.jpg" alt="" class="img2">
+                    <img src="../Images/p1.jpg" alt="" class="img2">
                 </div>
                 <div class="about-text">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iure aliquam? Eveniet quae explicabo consequuntur exercitationem dignissimos in, quam quibusdam perferendis? Maiores eos nemo, quos pariatur accusantium temporibus esse dignissimos ea excepturi neque quod similique tenetur ex vero quaerat quidem magnam ducimus sunt assumenda laudantium.</h4>
+                    <h4>Experience pangat hotel where delicious food meets exceptional service. We invite you to savor a symphony of flavors, from our signature butter chicken to seafood with innovative twists. Our user-friendly online platform makes ordering your favorite dishes a breeze. Experience the ambiance of our elegant dining table while our attentive staff ensures a memorable dining experience. </h4>
+                    <a href="#" class="know-more-button">Know More</a> 
                 </div>
             </div>
         </div>
-
-
-        
+        <!--Footer code-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../Images/logo1.png" alt="Pangat_Hotel" >
+                    </div>
+                    <p style="text-align:left; font-size: 1.2em; padding-top: 0;">Your one-stop destination for delicious food and symphony of flavors at your Pangat Hotel.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Veg</a></li>
+                        <li><a href="#">Fish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Book Table</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class='bx bxs-map' style="font-size: 1.8em; gap: 10px; margin-top: 0px;" ></i>    PC8V+HC3, Station Road,<br>     Korochi, Ichalkaranji, Maharashtra 416121</p>
+                    <p><i class='bx bxs-phone'style="font-size: 1.8em; gap: 10px;" ></i> 90757 77575, 8180805252</p>
+                    <p><i class='bx bxs-envelope'style="font-size: 1.8em; gap: 10px;" ></i><a href="mailto:pangathotel@gmail.com">  pangathotel@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <?php echo date("Y"); ?> Pangat Hotel. All rights reserved.</p>
+            </div>
+        </footer>
     </main>
+<script type="Javascript">
+    // Example: Add hover effect to social icons
+const socialIcons = document.querySelectorAll('.footer-social a');
 
+socialIcons.forEach(icon => {
+    icon.addEventListener('mouseover', () => {
+        icon.style.color = '#007bff'; // Change color on hover
+    });
+
+    icon.addEventListener('mouseout', () => {
+        icon.style.color = '#333'; // Reset color on mouseout
+    });
+});
+</script>
     <script src="../Javascript/menu.js"></script>
     <script src="../Javascript/index.js"></script>
+    <script src="../Javascript/get.js"></script>
     <!-- <script src="../Javascript/cart.js"></script> -->
 
 </body>

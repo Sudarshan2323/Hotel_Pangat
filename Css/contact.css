@@ -1,177 +1,140 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.contact-page {
+    padding: 0;
+    background: #f4f4f4; /* Light background */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    font-family: "Poppins", serif;
 }
 
-.contact-container {
+.container {
     display: flex;
-    flex-wrap: wrap; 
-    max-width: 900px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 960px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgb(236, 126, 126);
+    border-radius: 8px ;
+    overflow: hidden; /* Prevents content from overflowing rounded corners */
 }
 
-.contact-info, .contact-form {
-    flex: 1 1 300px;
+
+.contact-details, .enquiry-form {
+    flex: 1 1 300px; /* Each section takes at least 300px width */
     padding: 30px;
+    background-image: linear-gradient(to bottom, white , rgb(255, 51, 0)); 
 }
 
-.contact-info {
-    background-color: #f02929; 
-    color: white;
+.contact-details {
+     background-image: linear-gradient(to bottom, white , rgb(255, 51, 0));  
+    border-right: 1px solid #eee; /* Adds a separator line */
+    padding-bottom: 10px;
 }
 
-.contact-info h2 {
+.contact-details h2, .enquiry-form h2 {
     margin-bottom: 20px;
+    color: #df2214;
+    font: bold;
 }
 
-.contact-details .detail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.contact-details h3 {
+    margin-top: 10px;
+    color: #df3314;
+}
+.contact-details .mail h3 {
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Adjust this value for desired spacing */
+}
+.contact-details .mail h3 i {
+    font-size: 1.2em; /* Increase icon size */
+    color: #010408; /* Change icon color */
+}
+.contact-details .location h3 {
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Adjust this value for desired spacing */
+}
+.contact-details .location h3 i {
+    font-size: 1.2em; /* Increase icon size */
+    color: #010408; /* Change icon color */
+    
+}
+.contact-details .call h3 {
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Adjust this value for desired spacing */
+}
+.contact-details .call h3 i {
+    font-size: 1.2em; /* Increase icon size */
+    color: #010408; /* Change icon color */ 
+}
+.contact-details .Opening-hours h3 {
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Adjust this value for desired spacing */
+}
+.contact-details .Opening-hours h3 i {
+    font-size: 1.2em; /* Increase icon size */
+    color: #010408; /* Change icon color */
+    
 }
 
-.contact-details i {
-    margin-right: 10px;
-    font-size: 1.2rem;
+.contact-details p {
+    margin: 20px 0;
 }
 
-.office-hours {
-    margin-top: 30px;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
+.enquiry-form input, .enquiry-form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
-h2{
-    font-size: 2.2rem;
-    text-align: center;
-    margin: 0;
+
+.enquiry-form textarea {
+    height: 120px;
 }
 
 
-.underline{
-    width: 50px;
-    height: 3px;
-    background-color: #e74c3c;
-    margin: 10px auto 30px;
-    margin-bottom: 20px;
-}
-
-.contact-form button {
-    background-color: #f42222; 
+.enquiry-form button {
+    background: rgb(245, 32, 17); /* Blue button */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.enquiry-form .buttons { /* Style the button container */
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px; /* Add some top margin */
+}
+
+.enquiry-form button[type="reset"] { /* Style the reset button */
+    background: #ccc; 
+    color: #333; /* Dark text */
+    padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
+.enquiry-form button[type="reset"]:hover {  /* Hover effect */
+    background: #ddd;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column-reverse; 
+    .contact-details, .enquiry-form {
+        flex: 1 1 100%; /* Each section takes full width on smaller screens */
+        border: none; /* Remove border between sections */
+    }
+
+    .contact-details {
+        border-bottom: 1px solid #eee; /* Add bottom border to contact details */
     }
 }
-/* *body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-}
-
-.left-box, .right-box {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.left-box {
-    width: 40%;
-    color: #333;
-}
-
-.right-box {
-    width: 60%;
-}
-
-.left-box h2 {
-    color: #067cfb;
-}
-
-.left-box p, .left-box h3 {
-    margin: 0 0 10px;
-}
-
-.info-box {
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.info-box h3 {
-    margin: 0 0 5px;
-    color: #007BFF;
-}
-
-.right-box form input, 
-.right-box form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.right-box form button {
-    background: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.right-box form button:hover {
-    background: #0057b3;
->>>>>>> 99ef198d6c2ae292deba6bc80f0d0af620dd173c
-} */
