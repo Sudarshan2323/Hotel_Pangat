@@ -19,14 +19,36 @@ function displayMenuItems(items) {
         const menuItem = document.createElement('div');
         menuItem.classList.add('menu-item');
         menuItem.innerHTML = `
-                <div class="menu-card" onclick="showDetails(this)">
+            <div class="menu-card" onclick="showDetails(this)">
                 <img src=${item.pic}/>
               <div class="menu-content">
                <h3>${item.name}</h3>
                <p class=desc > ${item.desc}</p> 
                <h4 class="price">Rs.${item.price} </h4>
              </div>
-            </div>`;
+            </div>
+            <!--    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+     <img alt="A plate of pan-seared scallops with cauliflower purée" class="w-full h-48 object-cover" height="400" src=${item.pic} width="600"/>
+     <div class="p-4">
+      <div class="flex justify-between items-center mb-2">
+       <h3 class="text-xl font-bold">
+        ${item.name}
+       </h3>
+       <h4 class="text-lg font-semibold">
+        ${item.price}
+       </h4>
+      </div>
+      <p class="text-gray-600 mb-4">
+         ${item.desc}
+      </p>
+      <div class="flex justify-between items-center">
+
+       <button class="bg-black text-white px-4 py-2 rounded" onclick="showDetails(this)">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </div>--> `;
         menuList.appendChild(menuItem);
     });
 }
