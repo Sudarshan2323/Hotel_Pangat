@@ -13,32 +13,29 @@
         </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="../Images/logo1.png" alt="Pangat_Hotel" > 
-             <!-- <h1>Hotel_Pangat</h1>-->
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="#">Book Table</a></li>
+    <nav class="navbar">
+        <div class="navbar-brand"><img src="../Images/logo1.png" style="height: 40px; width: 100px;" alt=""></div>
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Book Table</a></li>
         </ul>
-        <div class="nav-list">
-            <ul class="item-list">
-                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
-                <li><a href="cart.html"><img src="../icon/cart.png" alt=""></a></li>
-                <div class="burger">
-                    <img src="../icon/menu.png" alt="bar" class="open">
-                </div>
-                <img src="../icon/close.png" alt="close" class="close">
-            </ul>
+        <div class="navbar-actions">
+          
+          <a href="cart.html">Cart(0)</a> 
         </div>
-        
-    </nav>
+        <div class="navbar-toggle" id="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     <main>
+
+    <!--Home page  -->
         <section id="home-page">
             <div class="text-title">
                 <h1>Enjoy our Delicious meal</h1>
@@ -49,6 +46,8 @@
                 <img src="../Images/Thali-img.png" alt="">
             </div>
         </section>
+
+    <!--Feature page section  -->
 
         <section class="features">
             <h2>Our Services</h2>
@@ -88,6 +87,8 @@
             </div>
         </section>
 
+    <!--Speciality Section code  -->
+
         <section class="specialties">
             <h2>
              Our Special Menu
@@ -105,11 +106,11 @@
              <div class="card" onclick="showDetails(this)">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Veg Maharashrian Thali</h3>
+               <h3 style="width: 100%;content: fill;">Veg Maharashrian Thali</h3>
                <p>2 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice | 1 
                 Sweet|1Papad 
                 </p>
-               <h4 class="price">Rs.220</h4>
+               <span><strong>Rs.</strong><h4 class="price">220</h4></span>
               </div>
              </div>
              </div>
@@ -120,7 +121,7 @@
               <div class="content">
                <h3>Veg Panjabi Thali</h3>
                <p>1 Paneer Bhaji | 1 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice|1Sweet | 1 Papad </p>
-               <h4 class="price">Rs.220</h4>
+               <span><strong>Rs.</strong><h4 class="price">220</h4></span>
               </div>
              </div>
              </div>
@@ -142,7 +143,7 @@
               <div class="content">
                <h3>Surmai Thali</h3>
                <p>1 PCS Surmai, Fish kari, Zinga Wati, 3 Chapati OR Bhakri OR Roti, Rice Plate, Solkadi, Dahi Kanda. </p>
-               <h4 class="price">As per need</h4>
+               <h4 class="price">240</h4>
               </div>
              </div>
              </div>
@@ -193,6 +194,9 @@
             </div>
             <center><a class="view-menu" href="menu.html"> View Full Menu </a></center>
         </section>
+
+    <!--Card Details page-->
+
         <div id="cardDetails" class="card-details">
             <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
             <img id="productImage" src=" " alt="">
@@ -201,6 +205,8 @@
             <h4 id="price"></h4>
             <button onclick="addToCart()" ondblclick="closeDetails()" >Add to Cart</button>
           </div>
+
+    <!--About Page section-->
 
         <div class="about">
             <h2>About us</h2>
@@ -216,7 +222,12 @@
                 </div>
             </div>
         </div>
-        <!--Footer code-->
+
+    <!--Login Popup section -->
+
+
+
+    <!--Footer code-->
         <footer>
             <div class="footer-container">
                 <div class="footer-column">
@@ -257,28 +268,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date("Y"); ?> Pangat Hotel. All rights reserved.</p>
+                <p>&copy; <?php echo date("Y"); ?> Pangat Hotel. All rights reserved. </p>
             </div>
         </footer>
     </main>
-<script type="Javascript">
-    // Example: Add hover effect to social icons
-const socialIcons = document.querySelectorAll('.footer-social a');
-
-socialIcons.forEach(icon => {
-    icon.addEventListener('mouseover', () => {
-        icon.style.color = '#007bff'; // Change color on hover
-    });
-
-    icon.addEventListener('mouseout', () => {
-        icon.style.color = '#333'; // Reset color on mouseout
-    });
-});
-</script>
     <script src="../Javascript/menu.js"></script>
     <script src="../Javascript/index.js"></script>
     <script src="../Javascript/get.js"></script>
-    <!-- <script src="../Javascript/cart.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    
 
 </body>
 </html>

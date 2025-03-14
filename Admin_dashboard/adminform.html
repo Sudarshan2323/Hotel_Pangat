@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="adminform.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="../Images/logo1.png" alt="LOGO">
+        </div>
+        <form action="admin.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username or Email Address</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" required>
+                    <span class="toggle-password" id="togglePassword">👁</span>
+                </div>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function() {
+    const passwordInput = document.getElementById('password');
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁' : '👁️'; // Change eye icon
+});
+    </script>
+</body>
+</html>

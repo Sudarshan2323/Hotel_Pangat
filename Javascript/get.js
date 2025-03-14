@@ -9,7 +9,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     for (let [key, value] of formData.entries()) {
         console.log(`${key}: ${value}`);
     }
-
     
 });
 document.getElementById('contactForm').addEventListener('submit', function(event) {

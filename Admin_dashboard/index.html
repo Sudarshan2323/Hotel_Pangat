@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li onclick="loadSection('orders')">Orders</li>
+            <li onclick="loadSection('bookings')">Bookings</li>
+            <li onclick="loadSection('products')">Products</li>
+            <li onclick="loadSection('users')">Users</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div id="content">
+            <!-- Data will be loaded here dynamically -->
+        </div>
+    </div>
+</div>
+
+<div class="admin-section">
+    <h2>Table Bookings</h2>
+    <div id="bookingContainer">
+        <!-- Booking details will be loaded here dynamically -->
+    </div>
+</div>
+
+
+<div class="admin-section">
+    <h2>User Details</h2>
+    <div id="userContainer">
+        <!-- User details will be loaded here dynamically -->
+    </div>
+</div>
+
+
+
+
+
+<!-- Popup Form for Adding/Editing Product -->
+<div id="productFormPopup" class="popup-form">
+    <form id="productForm" onsubmit="submitProduct(event)">
+        <input type="hidden" id="productId">
+        <label>Name:</label>
+        <input type="text" id="productName" required>
+
+        <label>Description:</label>
+        <textarea id="productDescription" required></textarea>
+
+        <label>Price:</label>
+        <input type="number" id="productPrice" step="0.01" required>
+
+        <label>Category:</label>
+        <input type="text" id="productCategory" required>
+
+        <label>Image:</label>
+        <input type="file" id="productImage" accept="image/*">
+
+        <button type="submit" onclick="loadProducts()">Save Product</button>
+        <button type="button" onclick="closeProductForm()">Cancel</button>
+    </form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

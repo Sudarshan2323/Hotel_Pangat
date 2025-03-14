@@ -1,0 +1,18 @@
+<div class="filter-section">
+    <!-- Category Dropdown -->
+    <select id="categoryFilter" onchange="filterProducts()">
+        <option value="">All Categories</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Beverage">Beverage</option>
+    </select>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchInput" placeholder="Search Products..." onkeyup="filterProducts()">
+</div>
+
+<!-- Container to Display Products -->
+<div class="product-container" id="productContainer">
+    <!-- Products will load here dynamically -->
+</div>

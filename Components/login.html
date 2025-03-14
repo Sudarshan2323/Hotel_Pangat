@@ -1,218 +1,112 @@
-<<<<<<< HEAD
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Register form</title>
+    <title>Popup Login Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-    <!--Boxicons CDN-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        .login-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="../Css/style1.css">
+        .popup {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
 
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px);/*subtract padding and border*/
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .login-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="wrapper">
 
-        <span class="rotate-bg"></span>
-        <span class="rotate-bg2"></span>
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
 
-        <div class="form-box login">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
 
-            <h2 class="title animation">Login</h2>
-
-            <form action="#">
-
-                <div class="input-box animation" style="--i:1; --j:22">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="--i:2; --j:23">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-
-                <button type="submit" class="btn animation" style="--i:3; --j:24">Login</button>
-
-                <div class="linkTxt animation" style="--i:5; --j:25">
-                    <p style="color: black;">Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
-                </div>
-                
+                <button type="submit" class="login-submit">Login</button>
             </form>
         </div>
-
-        <div class="info-text login">
-            <h2 class="animation" style="--i:0; --j:20">Welcome Back!</h2>
-            <p class="animation" style="--i:1; --j:21">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-
-
-
-
-
-
-        <div class="form-box register">
-
-            <h2 class="title animation">Sign Up</h2>
-
-            <form action="#">
-
-                <div class="input-box animation" style="--i:18; --j:1">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="--i:19; --j:2">
-                    <input type="email" required>
-                    <label for="">Email</label>
-                    <i class='bx bxs-envelope' ></i>
-                </div>
-
-                <div class="input-box animation" style="--i:20; --j:3">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-
-                <button type="submit" class="btn animation" style="--i:21;--j:4">Sign Up</button>
-
-                <div class="linkTxt animation" style="--i:22; --j:5">
-                    <p style="color: black;">Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-                
-            </form>
-        </div>
-
-
-        <div class="info-text register">
-            <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
-            <p class="animation" style="--i:18; --j:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
     </div>
+
     <script>
-        const wrapper = document.querySelector('.wrapper')
-const registerLink = document.querySelector('.register-link')
-const loginLink = document.querySelector('.login-link')
 
-registerLink.onclick = () => {
-    wrapper.classList.add('active')
-}
+        function closePopup() {
+            document.getElementById('loginPopup').style.display = 'none';
+        }
 
-loginLink.onclick = () => {
-    wrapper.classList.remove('active')
-}
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent default form submission
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+
+          // Here you would typically send the username and password to a server for verification.
+          // For this example, we'll just log them to the console.
+          console.log('Username:', username);
+          console.log('Password:', password);
+
+          closePopup(); // Close the popup after "login"
+          // Add your login verification logic here.
+        });
+
     </script>
-
-
-
-
-
-
-    <!--Script.js-->
 </body>
 </html>
-=======
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Register form</title>
-
-    <!--Boxicons CDN-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="../Css/style1.css">
-
-</head>
-<body>
-    
-    <div class="wrapper">
-
-        <span class="rotate-bg"></span>
-        <span class="rotate-bg2"></span>
-<!--login-->
-        <div class="form-box login">
-            <h2 class="title animation">Login</h2>
-            <form action="#">
-                <div class="input-box animation" style="color: #f51e1e;">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="color: #f51e1e;">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-                <button type="submit" class="btn animation" style="--i:3; --j:24">Login</button>
-                <div class="linkTxt animation" style="--i:5; --j:25">
-                    <p style="color: black;">Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
-                </div>
-                
-            </form>
-        </div>
-
-        <div class="info-text login">
-            <h2 class="animation" style="--i:0; --j:20">Welcome Back!</h2>
-            <p class="animation" style="--i:1; --j:21">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-<!--sign up-->
-        <div class="form-box register">
-
-            <h2 class="title animation">Sign Up</h2>
-
-            <form action="#">
-
-                <div class="input-box animation" style="color: #f51e1e;">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="color: #f51e1e;">
-                    <input type="email" required>
-                    <label for="">Email</label>
-                    <i class='bx bxs-envelope' ></i>
-                </div>
-
-                <div class="input-box animation" style="color: #f51e1e;">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-
-                <button type="submit" class="btn animation" style="--i:21;--j:4">Sign Up</button>
-
-                <div class="linkTxt animation" style="--i:22; --j:5">
-                    <p style="color: black;">Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-                
-            </form>
-        </div>
-
-
-        <div class="info-text register">
-            <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
-            <p class="animation" style="--i:18; --j:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-    </div>
-    <!--Script.js-->
-    <script src="app.js"></script>
-</body>
-</html>
->>>>>>> 99ef198d6c2ae292deba6bc80f0d0af620dd173c

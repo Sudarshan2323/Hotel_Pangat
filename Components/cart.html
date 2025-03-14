@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,47 +14,83 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">
-            <!-- <img src="../Images/logo1.png" alt="Pangat_Hotel" > -->
-             <h1>Hotel_Pangat</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Book Table</a></li>
+    <nav class="navbar">
+        <div class="navbar-brand"><img src="../Images/logo1.png" style="height: 40px; width: 100px;" alt=""></div>
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Book Table</a></li>
         </ul>
-        <div class="nav-list">
-            <ul class="item-list">
-                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
-                <li><a href="#"><img src="../icon/cart.png" alt=""></a></li>
-                <div class="burger">
-                    <img src="../icon/menu.png" alt="bar" class="open">
-                </div>
-                <img src="../icon/close.png" alt="close" class="close">
+        <div class="navbar-actions">
+          
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
 
-            </ul>
-        </div>    
-    </nav>
+    <section>
+        <div class="cart-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTableBody">
+                     Cart items will be loaded dynamically
+                </tbody>
+            </table>
+            <h3>Total Cart Price: <span id="totalPrice">Rs. 0.00</span></h3>
+        </div>
+    </section>
 
-    <h1 style="text-align: center;">Your Shopping Cart</h1>
-    <div id="cartItems"></div>
-    <button onclick="clearCart()">Clear Cart</button>
-    <button onclick="goBack()">Continue Shopping</button>
 
-    <div id="cardDetails" class="card-details">
-        <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
-        <img id="productImage" src=" " alt="">
-        <h2 id="productName"></h2>
-        <p id="desc"></p>
-        <h4 id="price"></h4>
-        <button onclick="buyNow()">Buy Now</button>
-      </div>
 
     <script src="../Javascript/cart.js"></script>
     <script src="../Javascript/index.js"></script>
-    <script src="../Javascript/menu.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../Css/cart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    
+    <div class="cart-container">
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded dynamically -->
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: <span id="subtotal">0.00</span></p>
+            <p>Shipping: <span id="shipping">0.00</span></p>
+            <p>Tax: <span id="tax">0.00</span></p>
+            <hr>
+            <p><strong>Total: <span id="total">0.00</span></strong></p>
+            <button onclick="checkout()">Complete Purchase</button>
+        </div>
+    </div>
+
+    <script src="../Javascript/cart.js"></script>
 </body>
 </html>

@@ -12,30 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <!-- <img src="../Images/logo1.png" alt="Pangat_Hotel" > -->
-             <h1>Hotel_Pangat</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="#">Book Table</a></li>
+    <nav class="navbar">
+        <div class="navbar-brand"><img src="../Images/logo1.png" style="height: 40px; width: 100px;" alt=""></div>
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Book Table</a></li>
         </ul>
-        <div class="nav-list">
-            <ul class="item-list">
-                <li><a href="#"><img src="../icon/login.png" alt=""></a></li>
-                <li><a href="cart.html"><img src="../icon/cart.png" alt=""></a></li>
-                <div class="burger">
-                    <img src="../icon/menu.png" alt="bar" class="open">
-                </div>
-                <img src="../icon/close.png" alt="close" class="close">
-
-            </ul>
-        </div>    
-    </nav>
+        <div class="navbar-actions">
+          
+          <a href="cart.html">Cart(0)</a> 
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
 
     <header>
         <h2>Contact Us</h2>
@@ -80,6 +76,7 @@
             </form>
         </div>
     </div>
+    <script src="../Javascript/index.js"></script>
     <script src="get.js"></script>
 </body>
 </html>

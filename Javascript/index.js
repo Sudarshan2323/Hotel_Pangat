@@ -1,22 +1,10 @@
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-const close=document.querySelector('.close');
-const back=document.getElementById('back');
 
+const navbarToggle = document.getElementById('navbarToggle');
+const navbarMenu = document.getElementById('navbarMenu');
 
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    burger.style.display="none"
-    close.style.display="block"
-    back.style.zIndex="-66"
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
 });
-close.addEventListener("click",()=>{
-    navLinks.classList.toggle('active');
-    burger.style.display="block"
-    close.style.display="none"
-    back.style.zIndex="0"   
-})
- 
 
 function showDetails(button) {
     var cardDetails = document.getElementById("cardDetails");
@@ -39,3 +27,41 @@ function showDetails(button) {
   function closeDetails() {
     document.getElementById("cardDetails").style.display = "none";
   }
+
+
+
+
+
+
+
+
+
+
+//   const loginForm = document.getElementById('loginForm');
+//         const signupForm = document.getElementById('signupForm');
+//         const loginPopup = document.getElementById('loginPopup');
+//         const createAccountLink = document.getElementById('createAccountLink');
+//         const alreadyAccountLink = document.getElementById('alreadyAccountLink');
+
+//         createAccountLink.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             loginForm.classList.add('hidden');
+//             signupForm.classList.remove('hidden');
+//         });
+
+//         alreadyAccountLink.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             signupForm.classList.add('hidden');
+//             loginForm.classList.remove('hidden');
+//         });
+
+
+//         loginPopup.addEventListener('click', function(event) {
+//             if (event.target === loginPopup) {
+//                 loginPopup.style.display = 'none';
+//             }
+//         });
+//         const loginclose=document.getElementById('log-close');
+// loginclose.addEventListener("click",()=>{
+//     console.log("Hello");
+// })

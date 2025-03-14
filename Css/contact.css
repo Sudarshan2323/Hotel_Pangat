@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4; /* Light background */
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -15,6 +14,7 @@ body {
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     max-width: 960px;
     margin: 20px;
+    height: auto;
     box-shadow: 0 0 10px rgb(236, 126, 126);
     border-radius: 8px ;
     overflow: hidden; /* Prevents content from overflowing rounded corners */
