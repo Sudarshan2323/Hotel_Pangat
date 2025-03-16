@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Italian Food</title>
     <link rel="stylesheet" href="../Css/gallery.css">
-    <link rel="stylesheet" href="../Css/index.css">
+    <!-- <link rel="stylesheet" href="../Css/index.css"> -->
+     <link rel="stylesheet" href="../Css/ai.css">
 </head>
-<body>
+<body style="font-family: poppins,sans-serif;">
     <nav class="navbar">
         <div class="navbar-brand"><img src="../Images/logo1.png" style="height: 40px; width: 100px;" alt=""></div>
         <ul class="navbar-menu" id="navbarMenu">
@@ -20,7 +21,7 @@
         </ul>
         <div class="navbar-actions">
           
-          <a href="cart.html">Cart(0)</a> 
+            <a href="cart.html" id="cartCount">Cart(0)</a> 
         </div>
         <div class="navbar-toggle" id="navbarToggle">
           <span></span>
@@ -66,5 +67,6 @@
         </section>
     </main>
     <script src="../Javascript/index.js"></script>
+    <script src="../Javascript/menu.js"></script>
 </body>
 </html>

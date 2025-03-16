@@ -1,13 +1,41 @@
-// Get the modals
-const openSignupButton = document.getElementById("openSignup");
-const openLoginButton = document.getElementById("openLogin");
-const signupModal = document.getElementById("signupModal");
-const loginModal = document.getElementById("loginModal");
-const closeSignup = document.getElementById("closeSignup");
-const closeLogin = document.getElementById("closeLogin");
+// Get DOM Elements
+const signupModal = document.getElementById('signupModal');
+const loginModal = document.getElementById('loginModal');
+const closeSignupBtn = document.getElementById('closeSignup');
+const closeLoginBtn = document.getElementById('closeLogin');
+const gotoLoginLink = document.getElementById('gotoLogin');
+const gotoSignupLink = document.getElementById('gotoSignup');
 
-// Open and close modals
-openSignupButton.onclick = () => signupModal.style.display = "block";
-openLoginButton.onclick = () => loginModal.style.display = "block";
-closeSignup.onclick = () => signupModal.style.display = "none";
-closeLogin.onclick = () => loginModal.style.display = "none";
+// Open Signup Form from Login Form
+gotoSignupLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  loginModal.classList.remove('active');
+  signupModal.classList.add('active');
+});
+
+// Open Login Form from Signup Form
+gotoLoginLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  signupModal.classList.remove('active');
+  loginModal.classList.add('active');
+});
+
+// Close Signup Form
+closeSignupBtn.addEventListener('click', () => {
+  signupModal.classList.remove('active');
+});
+
+// Close Login Form
+closeLoginBtn.addEventListener('click', () => {
+  loginModal.classList.remove('active');
+});
+
+// Close on Outside Click
+window.addEventListener('click', (e) => {
+  if (e.target === signupModal) {
+    signupModal.classList.remove('active');
+  }
+  if (e.target === loginModal) {
+    loginModal.classList.remove('active');
+  }
+});

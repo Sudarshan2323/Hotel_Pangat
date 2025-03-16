@@ -8,7 +8,7 @@ function loadCart() {
     fetch("../php/fetch_cart.php")
         .then(response => response.json())
         .then(data => {
-            // console.log("Cart Data:", data); // Debugging output
+            console.log("Cart Data:", data); // Debugging output
 
             let cartItems = document.getElementById("cartItems");
             cartItems.innerHTML = "";
