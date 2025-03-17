@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-column"> 
+        <h2>Savor the Moment,Reserve Your Table</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No:</label>
+                <div class="phone-wrapper">
+                    <span class="country-code">+91</span>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bookingDate">Booking Date:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+            </div>
+            <div class="form-group">
+                <label for="bookingTime">Booking Time:</label>
+                <select id="timeb" name="Slots">
+                    <option value="T1">11Am-1PM</option>
+                    <option value="T2">11Am-1PM</option>
+                    <option value="T3">11Am-1PM</option>
+                    <option value="T4">11Am-1PM</option>
+                    <option value="T5">11Am-1PM</option>
+                    </select> 
+            </div>
+            <div class="form-group">
+                <label for="adults">Number of Persons:</label>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+            </div>
+            <button type="submit">Submit</button>
+            <h5>Booking order placed?
+                <a href="#">Check status</a>
+            </h5>
+        </form>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
