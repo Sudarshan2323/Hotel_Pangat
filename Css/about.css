@@ -1,0 +1,146 @@
+
+nav {
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    display: flex;
+    position: sticky;
+    height: 80px;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+}
+.nav-links a:hover{
+    color: red;
+}
+.item-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.item-list li{
+    list-style: none;
+    margin-right: 20px;
+}
+.item-list li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    display: grid;
+    font-size: 16px;
+}
+.item-list li a img{
+    height:40px;
+    height: 40px;
+    color: black;
+}
+
+.about{
+    background-color: black;
+    padding: 70px;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.about .about-content{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    animation: appear linear;
+    animation-range: entry 0% cover 30%;
+    animation-timeline: view();
+
+}
+ p{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+/*features*/
+.specialties .view-menu {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: rgb(255, 249, 249);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 150px;
+}
+.feat {
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color:black;
+    
+}
+.feat .service-list{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+}
+.feat .service-list .feature {
+    text-align: center;
+    border: 2px solid rgb(241, 239, 239);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    border: 5px solid rgb(239 56 1);
+    animation: appear linear;
+}
+.feature:hover{
+    background-color: rgb(248, 100, 2);
+    border: 2px solid black;
+    
+}
+.feat .service-list .feature i {
+    font-size: 40px;
+    color: rgb(243, 239, 239);
+    margin-bottom: 10px;
+}
+.feat .service-list .feature h3 {
+    font-size: 24px;
+    color: rgb(245, 236, 236);
+    margin-bottom: 10px;
+}
+.feat .service-list .feature p {
+    font-size: 16px;
+    color: white;
+}
+.feat h2{
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+.feat .underline{
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c;
+    margin: 10px auto 30px;
+}
+
