@@ -28,7 +28,6 @@ $cartQuery = $conn->query("SELECT c.cart_id, p.product_id, p.name, p.price, c.qu
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Checkout</h2>
     <form action="place_order.php" method="POST">
         <label>Name:</label>
         <input type="text" name="name" value="<?= htmlspecialchars($user['name']) ?>" required>

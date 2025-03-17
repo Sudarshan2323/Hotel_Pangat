@@ -1,31 +1,205 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-h2, h3 {
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h3 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Order Summary */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect for List Items */
+ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Price Summary */
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p strong {
     color: #333;
 }
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
+
+/* Total Amount */
+h3.total {
+    color: #4CAF50;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
 }
-input, textarea {
+
+/* Submit Button */
+button[type="submit"] {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-}
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: #ffffff;
     border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-button:hover {
-    background-color: #218838;
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }
-ul {
-    list-style-type: none;
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 1024px) {
+    form {
+        max-width: 600px;
+        padding: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 14px;
+    }
 }

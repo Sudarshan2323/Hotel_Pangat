@@ -103,108 +103,79 @@
             <div class="container">
                 
             <div class="item">
-             <div class="card" onclick="showDetails(this)">
+             <div class="card">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_curry.jpg" width="300"/>
               <div class="content">
-               <h3 style="width: 100%;content: fill;">Veg Maharashrian Thali</h3>
-               <p>2 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice | 1 
-                Sweet|1Papad 
-                </p>
-               <span><strong>Rs.</strong><h4 class="price">220</h4></span>
+               <h3 style="width: 100%;content: fill;">Veg Maharashrian</h3>
               </div>
              </div>
              </div>
 
             <div class="item">
-             <div class="card" onclick="showDetails(this)">
+             <div class="card">
               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_biryani.jpg" width="300"/>
               <div class="content">
                <h3>Veg Panjabi Thali</h3>
-               <p>1 Paneer Bhaji | 1 Maharashtrian Bhaji | 1 Dal | 3 Chapati OR Bhakari OR Roti | 1 Plate Rice|1Sweet | 1 Papad </p>
-               <span><strong>Rs.</strong><h4 class="price">220</h4></span>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_tikka.jpg" width="300"/>
+                <div class="card">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_tikka.jpg" width="300"/>
               <div class="content">
                <h3>Chicken Fry Thali </h3>
-               <p>1 Plate Chicken Fry, 1 Plate Chicken Masala, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda. </p>
-               <h4 class="price">Rs.270</h4>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Butter_chicken.jpg" width="300"/>
+                <div class="card">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Butter_chicken.jpg" width="300"/>
               <div class="content">
                <h3>Surmai Thali</h3>
-               <p>1 PCS Surmai, Fish kari, Zinga Wati, 3 Chapati OR Bhakri OR Roti, Rice Plate, Solkadi, Dahi Kanda. </p>
-               <h4 class="price">240</h4>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_curry.jpg" width="300"/>
+                <div class="card">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Chicken_curry.jpg" width="300"/>
               <div class="content">
-               <h3>Chicken Gavaran Thali </h3>
-               <p>1 Plate Chicken Fry, 1 Plate Chicken Gavran, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda.  </p>
-               <h4 class="price">Rs.290</h4>
+               <h3>Chicken Gavaran</h3>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_Rogan_josh.jpg" width="300"/>
+                <div class="card">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Mutton_Rogan_josh.jpg" width="300"/>
               <div class="content">
-               <h3>Muttont Gavaran Thali </h3>
-               <p>1 Plate Mutton Fry, 1 Plate Mutton Gavran, 1 Plate Egg Masala, Tambada Rassa, Pandhara Rassa, 3 Chapati OR Bhakri OR Roti, Rice, Dahi Kanda. </p>
-               <h4 class="price">Rs.390</h4>
+               <h3>Muttont Gavaran</h3>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_fry.jpg" width="300"/>
+                <div class="card">
+               <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/Fish_fry.jpg" width="300"/>
               <div class="content">
                <h3>Chicken Lolipop</h3>
-               <p></p>
-               <h4 class="price">Rs.270</h4>
               </div>
              </div>
              </div>
 
              <div class="item">
-             <div class="card" onclick="showDetails(this)">
-              <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/veg_biryani.jpg" width="300"/>
+                <div class="card">
+                <img alt="Grilled Salmon with lemon butter sauce" height="200" src="../Images/veg_biryani.jpg" width="300"/>
               <div class="content">
                <h3>Murg Muslam</h3>
-               <p></p>
-               <h4 class="price">Rs.430</h4>
               </div>
              </div>
              </div>
             </div>
             <center><a class="view-menu" href="menu.html"> View Full Menu </a></center>
         </section>
-
-    <!--Card Details page-->
-
-        <div id="cardDetails" class="card-details">
-            <span class="close-button" onclick="closeDetails()"><img src="../icon/close.png" style="height: 35px;width: 35px;"></span>
-            <img id="productImage" src=" " alt="">
-            <h2 id="productName"></h2>
-            <p id="desc"></p>
-            <h4 id="price"></h4>
-            <button onclick="addToCart()" ondblclick="closeDetails()" >Add to Cart</button>
-          </div>
 
     <!--About Page section-->
 

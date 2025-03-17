@@ -183,8 +183,14 @@ img {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    overflow-x: scroll;
 }
-
+.cards .container{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
 .card {
     background-color: #ffffff;
     border-radius: 10px;
@@ -339,6 +345,16 @@ footer {
     }
 
     .about-content {
+        flex-direction: column;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .cards .container{
+        display: flex;
         flex-direction: column;
     }
 }
