@@ -1,47 +1,52 @@
 body {
-    font-family: sans-serif;
+    font-family:"poppins", sans-serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4; /* Light background */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Poppins", serif;
+    /* font-family: "Poppins", serif; */
 }
-
-.container {
+header{
+    display: flex;
+}
+header h2{
+    margin: 10px auto 5px;
+    font-size: 50px;
+}
+.containers {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     max-width: 960px;
-    margin: 20px;
+    margin: 10px auto 10px;
     height: auto;
     box-shadow: 0 0 10px rgb(236, 126, 126);
     border-radius: 8px ;
     overflow: hidden; /* Prevents content from overflowing rounded corners */
+    background-color: #f64d2f;
 }
 
 
 .contact-details, .enquiry-form {
     flex: 1 1 300px; /* Each section takes at least 300px width */
     padding: 30px;
-    background-image: linear-gradient(to bottom, white , rgb(255, 51, 0)); 
 }
 
 .contact-details {
-     background-image: linear-gradient(to bottom, white , rgb(255, 51, 0));  
     border-right: 1px solid #eee; /* Adds a separator line */
     padding-bottom: 10px;
 }
 
 .contact-details h2, .enquiry-form h2 {
     margin-bottom: 20px;
-    color: #df2214;
+    color: white;
     font: bold;
 }
 
 .contact-details h3 {
     margin-top: 10px;
-    color: #df3314;
+    color: white;
 }
 .contact-details .mail h3 {
     display: flex; /* Enable flexbox for alignment */
@@ -84,6 +89,7 @@ body {
 
 .contact-details p {
     margin: 20px 0;
+    color: whitesmoke;
 }
 
 .enquiry-form input, .enquiry-form textarea {
@@ -126,9 +132,15 @@ body {
 .enquiry-form button[type="reset"]:hover {  /* Hover effect */
     background: #ddd;
 }
+.yz{
+    color: whitesmoke;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .containers{
+        width: 90%;
+    }
     .contact-details, .enquiry-form {
         flex: 1 1 100%; /* Each section takes full width on smaller screens */
         border: none; /* Remove border between sections */
@@ -136,5 +148,8 @@ body {
 
     .contact-details {
         border-bottom: 1px solid #eee; /* Add bottom border to contact details */
+    }
+    .enquiry-form input, .enquiry-form textarea {
+        width: 90%;
     }
 }

@@ -60,7 +60,7 @@ header .underline{
   .search-bar {
     margin-bottom: 1rem;
     margin-top: 25px;
-    width: 500px;
+    width: 400px;
     height: 40px;
     overflow: hidden;
 }
@@ -72,17 +72,17 @@ header .underline{
     scrollbar-width: none;align-items: center;
     justify-content: space-around;
   }
+  .search-bar{
+    height: auto;
+  }
 input{
     width: 80%;
     height: 80%;
-    border: 2px solid red;
-    border-radius: 25px;
-    padding-left: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
     font-size: 19px;
     font-family: "poppins",serif;
-}
-.input :focus{
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 
@@ -175,6 +175,9 @@ img{
       }
     .search-bar{
         width: 85%;
+    }
+    input{
+      padding: 15px 10px;
     }
     /* #menu-list{
         display: flex;
@@ -390,3 +393,6 @@ img{
 .popup-content button:last-child:hover {
   background-color: #555;
 }
+
+
+
