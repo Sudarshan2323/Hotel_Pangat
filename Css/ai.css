@@ -50,6 +50,20 @@ img {
     transition: color 0.3s;
 }
 
+
+.navbar-menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #ff5100;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
 .navbar-menu li a:hover {
     color: #ff6347;
 }

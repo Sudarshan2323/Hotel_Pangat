@@ -7,6 +7,40 @@
     <!-- <link rel="stylesheet" href="../Css/index.css"> -->
      <link rel="stylesheet" href="../Css/ai.css">
     <link rel="stylesheet" href="../Css/contact.css">
+    <style>
+    .map-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 100px;
+      margin-bottom: 60px
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      border: 0;
+    }
+    @media (max-width: 768px) {
+      .map-container {
+        width: 100%;
+        padding-bottom: 75%; /* Adjust for smaller screens */
+      }
+      .map-container iframe {
+        height: 100%;
+      }
+        
+    }
+    </style>
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -76,6 +110,61 @@
             </form>
         </div>
     </div>
+    <center>
+
+    <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.340893260825!2d74.4435381!3d16.7163285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc11d001b1b87d9%3A0x78f5ef0def1693f6!2sHotel%20Pangat!5e0!3m2!1sen!2sin!4v1713084567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </center>
+        <!--Footer code-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../Images/logo1.png" alt="Pangat_Hotel" >
+                    </div>
+                    <p style="text-align:left; font-size: 1.2em; padding-top: 0;">Your one-stop destination for delicious food and symphony of flavors at your Pangat Hotel.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="menu.html">All</a></li>
+                        <li><a href="menu.html">Veg</a></li>
+                        <li><a href="menu.html">Fish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="booking.html">Book Table</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class='bx bxs-map' style="font-size: 1.8em; gap: 10px; margin-top: 0px;" ></i>    PC8V+HC3, Station Road,<br>     Korochi, Ichalkaranji, Maharashtra 416121</p>
+                    <p><i class='bx bxs-phone'style="font-size: 1.8em; gap: 10px;" ></i> 90757 77575, 8180805252</p>
+                    <p><i class='bx bxs-envelope'style="font-size: 1.8em; gap: 10px;" ></i><a href="mailto:pangathotel@gmail.com">  pangathotel@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <?php echo date("Y"); ?> Pangat Hotel. All rights reserved. </p>
+            </div>
+        </footer>
     <script src="../Javascript/index.js"></script>
     <script src="get.js"></script>
 </body>
